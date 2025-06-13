@@ -1,5 +1,5 @@
 # MPC for Inverted Pendulum on a Cart Stabilization
- Model Predictive Control (MPC) for stabilization of a cart-pendulum system. The files in this repository evaluate LQR, linear MPC, nonlinear MPC and Reference Governor (RG) algorithms. More details about the implementation are given in the **Inverted Pendulum on a Cart system stabilization via MPC control schemes** and **Inverted Pendulum on a Cart system stabilization via MPC control schemes_Presentation** .pdf files.
+ Model Predictive Control (MPC) for stabilization of a cart-pendulum system. The files in this repository evaluate LQR, linear MPC, nonlinear MPC and Reference Governor (RG) algorithms. More details about the implementation are given in the **Inverted Pendulum on a Cart system stabilization via MPC control schemes** and **Inverted Pendulum on a Cart system stabilization via MPC control schemes_Presentation** .pdf files. This code is used to obtain training data in [1].
 
 ## Setup for CasADi in Matlab for Windows
 Download CasADi binaries from [here](https://web.casadi.org/get/), unzip the files and place them in a directory of your choice. Then, in Matlab, run the following command depending on the file you downloaded.
@@ -31,3 +31,6 @@ The Youtube video in [this link](https://youtu.be/m_wtxx0UWF0) shows the results
 * **myQP.m** : Simple dual projected optimization algorithm for solving QP problems, used for implementing MPC at each step.
 * **nmpc.m** : Implementation of Nonlinear MPC by applying Sequential Quadratic Programming (SQP) by solving QP subsystems and adding up the results.
 * **switching_nmpc.m** : Implementation of Nonlinear MPC with similar implementation to **nmpc.m**. This scheme switches Q and Qf matrices depending on proximity to target bearing.
+
+## Citing Work
+* **[1] Juan Augusto Paredes Salazar, and Ankit Goel**. "MPC-guided, Data-driven Fuzzy Controller Synthesis." arXiv preprint arXiv:2410.06556 (2024).
